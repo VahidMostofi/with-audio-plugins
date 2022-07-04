@@ -13,11 +13,14 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["assets/js/jquery-3.6.0.min.js","borderify.js"]
+      "js": ["assets/js/jquery-3.6.0.min.js","main.js"],
+      "css": ["assets/css/all.min.css", "assets/css/main.css"]
     }
   ],
   "permissions": [
-    "*://localhost/*"
-  ]
+    "*://localhost/*",
+    "https://0bkjxq5hf4.execute-api.us-west-2.amazonaws.com/develop"
+  ],
+  "web_accessible_resources": ["assets/webfonts/fa-solid-900.woff2","assets/webfonts/fa-solid-900.ttf"]
 
 }
